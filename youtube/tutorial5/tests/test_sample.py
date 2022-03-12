@@ -5,7 +5,7 @@ from youtube.tutorial5.myapp.sample import save_dict
 
 
 def test_save_dict(tmpdir, capsys):
-    filepath = os.path.join(tmpdir, "test.json")
+    filepath = os.path.join(tmpdir, "blog.json")
     _dict = {"a": 1, "b": 2}
 
     save_dict(_dict, filepath)

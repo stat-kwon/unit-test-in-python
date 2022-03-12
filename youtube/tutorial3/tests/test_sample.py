@@ -16,6 +16,6 @@ def test_add_str():
 
 
 @pytest.mark.xfail(sys.platform == "win32", reason= "don't run on windows") # win32라면 exception을 무시하고 진행해주세요.
-def test_add_list(): # sys.platform == "darwin"이기 때문에 exception은 발생했고 test fail하게 됨
+def test_add_list(): # sys.platform == "darwin"이기 때문에 exception은 발생했고 blog fail하게 됨
     assert add([1], [2] == [1, 2])
     raise Exception()

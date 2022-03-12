@@ -6,7 +6,7 @@ from youtube.tutorial6.myapp.student import Student
 
 
 # scope를 정하고 dummy 생성을 reuse할지 정할 수 있다. (function, class, module, package or session)
-# scope = "module"을 하게 되면 아래 3번째 예제에서 test fail ( 5 != 0 )
+# scope = "module"을 하게 되면 아래 3번째 예제에서 blog fail ( 5 != 0 )
 @pytest.fixture(scope="function")
 def dummy_student():
     print("making dummy student")
